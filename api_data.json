@@ -39,7 +39,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Auth",
     "error": {
       "fields": {
@@ -82,7 +82,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Auth",
     "header": {
       "fields": {
@@ -118,7 +118,7 @@
     "name": "ExportConfig",
     "group": "Config",
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Config",
     "header": {
       "fields": {
@@ -159,7 +159,7 @@
       }
     ],
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Config",
     "header": {
       "fields": {
@@ -200,7 +200,7 @@
       }
     ],
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Config",
     "header": {
       "fields": {
@@ -277,7 +277,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Containers",
     "header": {
       "fields": {
@@ -308,7 +308,7 @@
   },
   {
     "type": "get",
-    "url": "/containers/:repo/inspect",
+    "url": "/containers/:repo",
     "title": "Inspect container",
     "name": "InspectContainer",
     "group": "Containers",
@@ -326,69 +326,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
-    "groupTitle": "Containers",
-    "header": {
-      "fields": {
-        "Header": [
-          {
-            "group": "Header",
-            "type": "String",
-            "optional": false,
-            "field": "x-mirror-token",
-            "description": "<p>Users unique access-key.</p>"
-          }
-        ]
-      }
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "type": "String",
-            "optional": false,
-            "field": "message",
-            "description": "<p>Error message.</p>"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "delete",
-    "url": "/containers/:repo",
-    "title": "Delete container",
-    "name": "ListContainers",
-    "group": "Containers",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "repo",
-            "description": "<p>Name of the Repository</p>"
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "empty",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Containers",
     "header": {
       "fields": {
@@ -437,8 +375,70 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Containers",
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Error message.</p>"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "delete",
+    "url": "/containers/:repo",
+    "title": "Delete container",
+    "name": "ListContainers",
+    "group": "Containers",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "repo",
+            "description": "<p>Name of the Repository</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "empty",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/routes/api.js",
+    "groupTitle": "Containers",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "x-mirror-token",
+            "description": "<p>Users unique access-key.</p>"
+          }
+        ]
+      }
+    },
     "error": {
       "fields": {
         "Error 4xx": [
@@ -486,7 +486,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Containers",
     "error": {
       "fields": {
@@ -594,7 +594,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Repositories",
     "header": {
       "fields": {
@@ -656,7 +656,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Repositories",
     "header": {
       "fields": {
@@ -739,7 +739,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Repositories",
     "header": {
       "fields": {
@@ -864,7 +864,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Repositories",
     "error": {
       "fields": {
@@ -886,6 +886,19 @@
     "title": "List repositories",
     "name": "ListRepositories",
     "group": "Repositories",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "type",
+            "description": "<p>Basename of the Docker image</p>"
+          }
+        ]
+      }
+    },
     "success": {
       "fields": {
         "Success 200": [
@@ -970,7 +983,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Repositories",
     "error": {
       "fields": {
@@ -1035,7 +1048,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Repositories",
     "header": {
       "fields": {
@@ -1169,7 +1182,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Repositories",
     "header": {
       "fields": {
@@ -1223,7 +1236,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Users",
     "header": {
       "fields": {
@@ -1277,7 +1290,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Users",
     "header": {
       "fields": {
@@ -1331,7 +1344,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Users",
     "header": {
       "fields": {
@@ -1380,7 +1393,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Users",
     "header": {
       "fields": {
@@ -1429,7 +1442,7 @@
       }
     },
     "version": "0.0.0",
-    "filename": "src/routes/index.js",
+    "filename": "src/routes/api.js",
     "groupTitle": "Users",
     "header": {
       "fields": {
@@ -1462,9 +1475,9 @@
     "version": "0.1.0",
     "type": "",
     "url": "",
-    "filename": "src/routes/index.js",
-    "group": "_home_knight_Project_ustcmirror_yuki_src_routes_index_js",
-    "groupTitle": "_home_knight_Project_ustcmirror_yuki_src_routes_index_js",
+    "filename": "src/routes/api.js",
+    "group": "_home_knight_Project_ustcmirror_yuki_src_routes_api_js",
+    "groupTitle": "_home_knight_Project_ustcmirror_yuki_src_routes_api_js",
     "name": ""
   }
 ]

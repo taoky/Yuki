@@ -29,6 +29,11 @@
   branch = "master"
   name = "github.com/fsouza/go-dockerclient"
 
+# https://github.com/fsouza/go-dockerclient/issues/736
+[[override]]
+  branch = "master"
+  name = "github.com/docker/libnetwork"
+
 [[constraint]]
   branch = "master"
   name = "github.com/globalsign/mgo"

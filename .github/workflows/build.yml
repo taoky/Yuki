@@ -53,7 +53,6 @@ jobs:
         ci/script.sh
 
     - name: Deploy - Build
-      if: startsWith(github.ref, 'refs/tags/')
       run: ci/build.sh
       env:
         GOOS: ${{ matrix.GOOS }}
@@ -87,3 +86,9 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         release-url: ${{ steps.create_release.outputs.upload_url }}
         pattern: ${{ env.NAME }}-*.tar.gz
+
+    - name: Deploy - Upload Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: ${{ env.NAME }}-*.tar.gz
